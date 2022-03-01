@@ -36,12 +36,9 @@ final class APICaller {
                 
                 do {
                     let result = try
-                    //JSONSerialization.jsonObject(with: data, options: .allowFragments)
                     JSONDecoder().decode(AlbumDetailsReponse.self, from: data)
-                    print(result)
                     completion(.success(result))
                 } catch {
-                    print(error)
                     completion(.failure(error))
                 }
             }
@@ -64,12 +61,9 @@ final class APICaller {
                 
                 do {
                     let result = try
-//                    JSONSerialization.jsonObject(with: data, options: .allowFragments)
                     JSONDecoder().decode(PlaylistDetailsResponse.self, from: data)
-                    print(result)
                     completion(.success(result))
                 } catch {
-                    print(error)
                     completion(.failure(error))
                 }
             }
@@ -138,7 +132,6 @@ final class APICaller {
                 
                 do {
                     let result = try JSONDecoder().decode(NewReleasesResponse.self, from: data)
-//                    print(result)
                     completion(.success(result))
                 } catch {
                     completion(.failure(error))
@@ -183,7 +176,6 @@ final class APICaller {
                 
                 do {
                     let result =  try JSONDecoder().decode(RecommendedGenresResponse.self, from: data)
-//                    print(result)
                     completion(.success(result))
                 } catch {
                     completion(.failure(error))
