@@ -60,7 +60,6 @@ class LibraryPlaylistsViewController: UIViewController {
             tableView.isHidden = true
         } else {
             // Show Table
-            print("playlists is not empty")
             tableView.reloadData()
             tableView.isHidden = false
             noPlaylistsView.isHidden = true
@@ -113,7 +112,6 @@ class LibraryPlaylistsViewController: UIViewController {
                     // Refresh list of playlists
                     self?.fetchPlaylist()
                 } else {
-                    print("failed to create playlist")
                 }
             }
         })
@@ -164,6 +162,7 @@ extension LibraryPlaylistsViewController: UITableViewDelegate, UITableViewDataSo
         
         let vc = PlaylistViewController(playlist: playlist)
         vc.navigationItem.largeTitleDisplayMode = .never
+        vc.isOwner = true
         navigationController?.pushViewController(vc, animated: true)
         
     }

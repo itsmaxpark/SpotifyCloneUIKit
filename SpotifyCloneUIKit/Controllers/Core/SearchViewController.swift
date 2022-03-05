@@ -102,7 +102,6 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
                 }
             }
         }
-        print(query)
     }
     
     func updateSearchResults(for searchController: UISearchController) {

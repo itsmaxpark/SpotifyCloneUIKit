@@ -28,7 +28,7 @@ final class PlaybackPresenter {
         if let track = track, tracks.isEmpty {
             return track
         }
-        else if let player = self.playerQueue, !tracks.isEmpty {
+        else if let _ = self.playerQueue, !tracks.isEmpty {
             return tracks[index]
         }
         return nil
@@ -109,12 +109,10 @@ extension PlaybackPresenter: PlayerViewControllerDelegate {
     func didTapNext() {
         if tracks.isEmpty {
             // Not playlist or album
-            print("isEmpty")
             player?.pause()
         } else if let player = playerQueue{
             player.advanceToNextItem()
             index += 1
-            print(index)
             playerVC?.refreshUI()
         }
     }
