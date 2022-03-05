@@ -63,6 +63,9 @@
 		501AD51227D1A5AC003FC58E /* SearchResultSubtitleTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD51127D1A5AC003FC58E /* SearchResultSubtitleTableViewCellViewModel.swift */; };
 		501AD51527D1AE0E003FC58E /* PlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD51427D1AE0E003FC58E /* PlaybackPresenter.swift */; };
 		501AD51727D1B3FB003FC58E /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD51627D1B3FB003FC58E /* PlayerControlsView.swift */; };
+		501AD51A27D2D97C003FC58E /* LibraryPlaylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD51927D2D97C003FC58E /* LibraryPlaylistsViewController.swift */; };
+		501AD51C27D2D9A1003FC58E /* LibraryAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD51B27D2D9A1003FC58E /* LibraryAlbumsViewController.swift */; };
+		501AD51E27D2DC37003FC58E /* LibraryToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501AD51D27D2DC37003FC58E /* LibraryToggleView.swift */; };
 		7ECD64FE2A98E6E537CCDF0A /* Pods_SpotifyCloneUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B3F41EDE95D9607D1D9F4E2 /* Pods_SpotifyCloneUIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +128,9 @@
 		501AD51127D1A5AC003FC58E /* SearchResultSubtitleTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultSubtitleTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		501AD51427D1AE0E003FC58E /* PlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackPresenter.swift; sourceTree = "<group>"; };
 		501AD51627D1B3FB003FC58E /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
+		501AD51927D2D97C003FC58E /* LibraryPlaylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistsViewController.swift; sourceTree = "<group>"; };
+		501AD51B27D2D9A1003FC58E /* LibraryAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsViewController.swift; sourceTree = "<group>"; };
+		501AD51D27D2DC37003FC58E /* LibraryToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryToggleView.swift; sourceTree = "<group>"; };
 		9AE995EEE245AF6F2A38C1CF /* Pods-SpotifyCloneUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyCloneUIKit.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyCloneUIKit/Pods-SpotifyCloneUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		9B3F41EDE95D9607D1D9F4E2 /* Pods_SpotifyCloneUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyCloneUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33C4FA32A9792B72604E0B4 /* Pods-SpotifyCloneUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyCloneUIKit.release.xcconfig"; path = "Target Support Files/Pods-SpotifyCloneUIKit/Pods-SpotifyCloneUIKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 				501AD4F827CDC72E003FC58E /* TitleHeaderCollectionReusableView.swift */,
 				501AD4FE27D12A0F003FC58E /* GenreCollectionViewCell.swift */,
 				501AD51627D1B3FB003FC58E /* PlayerControlsView.swift */,
+				501AD51D27D2DC37003FC58E /* LibraryToggleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 		501AD4B427CC0A85003FC58E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				501AD51827D2D963003FC58E /* Library */,
 				501AD4EE27CD6964003FC58E /* AlbumViewController.swift */,
 				501AD4B527CC0A99003FC58E /* AuthViewController.swift */,
 				501AD50427D13444003FC58E /* CategoryViewController.swift */,
@@ -310,6 +318,15 @@
 				501AD51427D1AE0E003FC58E /* PlaybackPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		501AD51827D2D963003FC58E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				501AD51927D2D97C003FC58E /* LibraryPlaylistsViewController.swift */,
+				501AD51B27D2D9A1003FC58E /* LibraryAlbumsViewController.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		6DB0DCF2A64D6AC6E4B76478 /* Pods */ = {
@@ -447,6 +464,7 @@
 				501AD4F327CD710B003FC58E /* PlaylistDetailsResponse.swift in Sources */,
 				501AD4CA27CC0B29003FC58E /* Playlist.swift in Sources */,
 				501AD50727D13D6E003FC58E /* SearchResultResponse.swift in Sources */,
+				501AD51E27D2DC37003FC58E /* LibraryToggleView.swift in Sources */,
 				501AD4C427CC0AF7003FC58E /* AuthManager.swift in Sources */,
 				501AD4E927CD3899003FC58E /* NewReleasesCellViewModel.swift in Sources */,
 				501AD4FD27CDCDDC003FC58E /* AlbumCollectionViewCellViewModel.swift in Sources */,
@@ -471,6 +489,7 @@
 				501AD4D427CC2003003FC58E /* AuthResponse.swift in Sources */,
 				501AD4D827CD161E003FC58E /* NewReleasesResponse.swift in Sources */,
 				501AD4FB27CDCC6E003FC58E /* AlbumTrackCollectionViewCell.swift in Sources */,
+				501AD51C27D2D9A1003FC58E /* LibraryAlbumsViewController.swift in Sources */,
 				501AD4E027CD2239003FC58E /* RecommendationsResponse.swift in Sources */,
 				501AD4DA27CD16ED003FC58E /* APIImage.swift in Sources */,
 				501AD4CC27CC0B32003FC58E /* AudioTrack.swift in Sources */,
@@ -490,6 +509,7 @@
 				501AD4D627CC48AC003FC58E /* SettingsModels.swift in Sources */,
 				501AD4C027CC0AC8003FC58E /* PlaylistViewController.swift in Sources */,
 				501AD49627CBF4D9003FC58E /* SceneDelegate.swift in Sources */,
+				501AD51A27D2D97C003FC58E /* LibraryPlaylistsViewController.swift in Sources */,
 				501AD51027D1A4DB003FC58E /* SearchResultsSubtitleTableViewCell.swift in Sources */,
 				501AD4F127CD6D0B003FC58E /* AlbumDetailsResponse.swift in Sources */,
 				501AD4BE27CC0ABF003FC58E /* PlayerViewController.swift in Sources */,
